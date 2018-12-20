@@ -1,0 +1,182 @@
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\FamilyManager.pdb
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\MainWindow.g.cs
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\App.g.cs
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager_MarkupCompile.cache
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager_MarkupCompile.lref
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\App.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\MainWindow.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.g.resources
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.Properties.Resources.resources
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.csproj.GenerateResource.Cache
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.exe
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.pdb
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe.config
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\MBox.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\PerCalendar.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\PersianDateTime.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe.manifest
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\FamilyManager.application
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\EntityFramework.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\EntityFramework.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.exe.manifest
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.application
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.xml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DesignTimeResources.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\Dictionary1.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryColonPunctuation.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryLable.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryLeftToolbarBut.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTextBox.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTextBoxTemplate.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTimePicker.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryToggle.baml
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager_Content.g.cs
+C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\obj\Debug\FamilyManager.csprojResolveAssemblyReference.cache
+E:\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe.config
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.exe
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.pdb
+E:\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe.manifest
+E:\FamilyManager\FamilyManager\bin\Debug\FamilyManager.application
+E:\FamilyManager\FamilyManager\bin\Debug\FamilyManager.exe
+E:\FamilyManager\FamilyManager\bin\Debug\FamilyManager.pdb
+E:\FamilyManager\FamilyManager\bin\Debug\EntityFramework.dll
+E:\FamilyManager\FamilyManager\bin\Debug\EntityFramework.SqlServer.dll
+E:\FamilyManager\FamilyManager\bin\Debug\MBox.dll
+E:\FamilyManager\FamilyManager\bin\Debug\PerCalendar.dll
+E:\FamilyManager\FamilyManager\bin\Debug\PersianDateTime.dll
+E:\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.dll
+E:\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.EF6.dll
+E:\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.Linq.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.DataGrid.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\FamilyManager\FamilyManager\bin\Debug\EntityFramework.xml
+E:\FamilyManager\FamilyManager\bin\Debug\EntityFramework.SqlServer.xml
+E:\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Effects.xml
+E:\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Interactions.xml
+E:\FamilyManager\FamilyManager\bin\Debug\System.Data.SQLite.xml
+E:\FamilyManager\FamilyManager\bin\Debug\System.Windows.Interactivity.xml
+E:\FamilyManager\FamilyManager\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.csprojResolveAssemblyReference.cache
+E:\FamilyManager\FamilyManager\obj\Debug\MainWindow.g.cs
+E:\FamilyManager\FamilyManager\obj\Debug\App.g.cs
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager_Content.g.cs
+E:\FamilyManager\FamilyManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager_MarkupCompile.cache
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager_MarkupCompile.lref
+E:\FamilyManager\FamilyManager\obj\Debug\App.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DesignTimeResources.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\Dictionary1.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryColonPunctuation.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryLable.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryLeftToolbarBut.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTextBox.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTextBoxTemplate.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryTimePicker.baml
+E:\FamilyManager\FamilyManager\obj\Debug\Dic\DictionaryToggle.baml
+E:\FamilyManager\FamilyManager\obj\Debug\MainWindow.baml
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.g.resources
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.Properties.Resources.resources
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.csproj.GenerateResource.Cache
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.exe.manifest
+E:\FamilyManager\FamilyManager\obj\Debug\FamilyManager.application
+E:\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Effects.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\FamilyManager\FamilyManager\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+E:\FamilyManager\FamilyManager\bin\Debug\System.Windows.Interactivity.dll

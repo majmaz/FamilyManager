@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FamilyManaerDBModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=&quot;C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\x86\Debug\FamilyManaerDB.db&quot;" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ComboBoxTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Deposit" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="DepositTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Deposit" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ssum" Type="integer" />
+    <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="GDate" Type="datetime" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="FinancialTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Income" Type="decimal" Precision="53" Scale="0" />
+    <Property Name="Cost" Type="decimal" Precision="53" Scale="0" />
+    <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Datee" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="FinancialCategory" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Deposite" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Pas" Type="bit" />
+    <Property Name="girandeh" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="EnterDate" Type="datetime" />
+    <Property Name="Meghdar" Type="decimal" Precision="53" Scale="0" />
+  </EntityType>
+  <EntityType Name="GhzaNameTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Nafarat" Type="int" />
+    <Property Name="Aks" Type="blob" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="HamsaieTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameVahed" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="TedadNafarat" Type="int" />
+    <Property Name="Metrazh" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="IadAvarTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TitleActivity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PersianStartDate" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PersianStartTime" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="StartDateTime" Type="datetime" />
+    <Property Name="PersianEndTime" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="EndDateTime" Type="datetime" />
+    <Property Name="ReminderCategory" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PeriodNumBer" Type="int" />
+    <Property Name="Periodic" Type="bit" />
+    <Property Name="PeriodicEndTime" Type="datetime" />
+    <Property Name="PeriodocKind" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="MeasurePeriodic" Type="int" />
+    <Property Name="EndDesription" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="MavadGhzaNameTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameGhaza" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="NameMavad" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Meghdar" Type="int" />
+    <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="SabteHazinehSakhtemanTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TitleCost" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="GDate" Type="datetime" />
+    <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Cost" Type="decimal" Precision="53" Scale="0" />
+    <Property Name="mmonth" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ShiveTaghsim" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Year" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Tanzimat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ZamanIadAvar" Type="datetime" />
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TreeKala">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="SubHeader" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="SubSubHeader" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Callery" Type="int" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="VAMTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ssum" Type="decimal" Precision="53" Scale="0" />
+    <Property Name="NumberGhest" Type="int" />
+    <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="GDate" Type="datetime" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityContainer Name="FamilyManaerDBModelStoreContainer">
+    <EntitySet Name="ComboBoxTbl" EntityType="Self.ComboBoxTbl" store:Type="Tables" />
+    <EntitySet Name="DepositTbl" EntityType="Self.DepositTbl" store:Type="Tables" />
+    <EntitySet Name="FinancialTbl" EntityType="Self.FinancialTbl" store:Type="Tables" />
+    <EntitySet Name="GhzaNameTbl" EntityType="Self.GhzaNameTbl" store:Type="Tables" />
+    <EntitySet Name="HamsaieTbl" EntityType="Self.HamsaieTbl" store:Type="Tables" />
+    <EntitySet Name="IadAvarTbl" EntityType="Self.IadAvarTbl" store:Type="Tables" />
+    <EntitySet Name="MavadGhzaNameTbl" EntityType="Self.MavadGhzaNameTbl" store:Type="Tables" />
+    <EntitySet Name="SabteHazinehSakhtemanTbl" EntityType="Self.SabteHazinehSakhtemanTbl" store:Type="Tables" />
+    <EntitySet Name="Tanzimat" EntityType="Self.Tanzimat" store:Type="Tables" />
+    <EntitySet Name="TreeKala" EntityType="Self.TreeKala" store:Type="Tables" />
+    <EntitySet Name="VAMTbl" EntityType="Self.VAMTbl" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

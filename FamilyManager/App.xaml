@@ -8,7 +8,13 @@
 
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="DictionaryLeftToolbarBut.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryLeftToolbarBut.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryLable.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTextBox.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryToggle.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTextBoxTemplate.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryColonPunctuation.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTimePicker.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 

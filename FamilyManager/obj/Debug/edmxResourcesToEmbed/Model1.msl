@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FamilyManaerDBModelStoreContainer" CdmEntityContainer="FamilyManaerDBEntities">
+    <EntitySetMapping Name="ComboBoxTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.ComboBoxTbl">
+        <MappingFragment StoreEntitySet="ComboBoxTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepositTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.DepositTbl">
+        <MappingFragment StoreEntitySet="DepositTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+          <ScalarProperty Name="ssum" ColumnName="ssum" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="GDate" ColumnName="GDate" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinancialTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.FinancialTbl">
+        <MappingFragment StoreEntitySet="FinancialTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="Datee" ColumnName="Datee" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FinancialCategory" ColumnName="FinancialCategory" />
+          <ScalarProperty Name="Deposite" ColumnName="Deposite" />
+          <ScalarProperty Name="Pas" ColumnName="Pas" />
+          <ScalarProperty Name="girandeh" ColumnName="girandeh" />
+          <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
+          <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GhzaNameTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.GhzaNameTbl">
+        <MappingFragment StoreEntitySet="GhzaNameTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Nafarat" ColumnName="Nafarat" />
+          <ScalarProperty Name="Aks" ColumnName="Aks" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HamsaieTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.HamsaieTbl">
+        <MappingFragment StoreEntitySet="HamsaieTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameVahed" ColumnName="NameVahed" />
+          <ScalarProperty Name="TedadNafarat" ColumnName="TedadNafarat" />
+          <ScalarProperty Name="Metrazh" ColumnName="Metrazh" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IadAvarTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.IadAvarTbl">
+        <MappingFragment StoreEntitySet="IadAvarTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TitleActivity" ColumnName="TitleActivity" />
+          <ScalarProperty Name="PersianStartDate" ColumnName="PersianStartDate" />
+          <ScalarProperty Name="PersianStartTime" ColumnName="PersianStartTime" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="PersianEndTime" ColumnName="PersianEndTime" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+          <ScalarProperty Name="ReminderCategory" ColumnName="ReminderCategory" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="PeriodNumBer" ColumnName="PeriodNumBer" />
+          <ScalarProperty Name="Periodic" ColumnName="Periodic" />
+          <ScalarProperty Name="PeriodicEndTime" ColumnName="PeriodicEndTime" />
+          <ScalarProperty Name="PeriodocKind" ColumnName="PeriodocKind" />
+          <ScalarProperty Name="MeasurePeriodic" ColumnName="MeasurePeriodic" />
+          <ScalarProperty Name="EndDesription" ColumnName="EndDesription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MavadGhzaNameTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.MavadGhzaNameTbl">
+        <MappingFragment StoreEntitySet="MavadGhzaNameTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameGhaza" ColumnName="NameGhaza" />
+          <ScalarProperty Name="NameMavad" ColumnName="NameMavad" />
+          <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+          <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SabteHazinehSakhtemanTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.SabteHazinehSakhtemanTbl">
+        <MappingFragment StoreEntitySet="SabteHazinehSakhtemanTbl">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TitleCost" ColumnName="TitleCost" />
+          <ScalarProperty Name="GDate" ColumnName="GDate" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="mmonth" ColumnName="mmonth" />
+          <ScalarProperty Name="ShiveTaghsim" ColumnName="ShiveTaghsim" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tanzimats">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.Tanzimat">
+        <MappingFragment StoreEntitySet="Tanzimat">
+          <ScalarProperty Name="ZamanIadAvar" ColumnName="ZamanIadAvar" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TreeKalas">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.TreeKala">
+        <MappingFragment StoreEntitySet="TreeKala">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="SubHeader" ColumnName="SubHeader" />
+          <ScalarProperty Name="SubSubHeader" ColumnName="SubSubHeader" />
+          <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+          <ScalarProperty Name="Callery" ColumnName="Callery" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VAMTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.VAMTbl">
+        <MappingFragment StoreEntitySet="VAMTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ssum" ColumnName="ssum" />
+          <ScalarProperty Name="NumberGhest" ColumnName="NumberGhest" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="GDate" ColumnName="GDate" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

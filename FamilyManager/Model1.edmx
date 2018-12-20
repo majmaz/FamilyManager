@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FamilyManaerDBModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=&quot;C:\Users\SKY\Documents\Visual Studio 2017\Projects\FamilyManager\FamilyManager\bin\x86\Debug\FamilyManaerDB.db&quot;" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ComboBoxTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Deposit" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="OnvanHazinehIaDaramadSakhteman" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NoeHazinehIaDaramadSakhteman" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="OnvanKar" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="khosheBandi" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PersinanDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="SpecialCode" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="File" Type="blob" />
+        </EntityType>
+        <EntityType Name="DepositTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Deposit" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="ssum" Type="integer" />
+          <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GDate" Type="datetime" />
+          <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="FinancialTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Income" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="Cost" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Datee" Type="datetime" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="FinancialCategory" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Deposite" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Pas" Type="bit" />
+          <Property Name="girandeh" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="EnterDate" Type="datetime" />
+          <Property Name="Meghdar" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="Takhsis" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="IntPersianYear" Type="int" />
+          <Property Name="IntPersianMonth" Type="int" />
+        </EntityType>
+        <EntityType Name="GhazaBarnamehTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Onvan" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Nafar" Type="int" />
+          <Property Name="Gdate" Type="datetime" />
+          <Property Name="KasrMavad" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Gheimat" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="PersainDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Vade" Type="char" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="GhzaNameTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Nafarat" Type="int" />
+          <Property Name="Aks" Type="blob" />
+          <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="HamsaieTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameVahed" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="TedadNafarat" Type="int" />
+          <Property Name="Metrazh" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="StartGdate" Type="datetime" />
+          <Property Name="startPersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="FinishGdate" Type="datetime" />
+          <Property Name="FinishPersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Tasfieh" Type="bit" />
+          <Property Name="PhineNumber" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="IadAvarDaroTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OnvanDaro" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Tozihat" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GDate" Type="datetime" />
+          <Property Name="Saat" Type="datetime" />
+          <Property Name="Dore" Type="int" />
+          <Property Name="Dafe" Type="int" />
+          <Property Name="NoeDore" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="IadAvarTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TitleActivity" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PersianStartDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PersianStartTime" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="PersianEndTime" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="ReminderCategory" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PeriodNumBer" Type="int" />
+          <Property Name="Periodic" Type="bit" />
+          <Property Name="PeriodicEndTime" Type="datetime" />
+          <Property Name="PeriodocKind" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="MeasurePeriodic" Type="int" />
+          <Property Name="EndDesription" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="MavadGhzaNameTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameGhaza" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NameMavad" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Meghdar" Type="int" />
+          <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="MojodiKalaTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Onvan" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Meghdar" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="OnvanDaramadTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Onvan" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="OnvanVamNafarTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nafar" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="VamTitle" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="OnvanVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="StarGdate" Type="datetime" />
+          <Property Name="StartPersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="FAAL" Type="bit" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="MablaghVam" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="MablaghGhest" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="TedadAghsat" Type="int" />
+        </EntityType>
+        <EntityType Name="PardakhtVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OnvanVam" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NameVamGirandeh" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="MablaghPardakhti" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="Tozihat" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GTarikh" Type="datetime" />
+          <Property Name="Tarikh" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="SabteHazinehSakhtemanTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TitleCost" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GDate" Type="datetime" />
+          <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Cost" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="mmonth" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="ShiveTaghsim" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="IDVahed" Type="int" />
+          <Property Name="Year" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Income" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="VahedName" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="StartGdat" Type="datetime" />
+          <Property Name="startPersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="FinishGdate" Type="datetime" />
+          <Property Name="FinishPersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Enteghali" Type="bit" />
+        </EntityType>
+        <EntityType Name="TakhsisDaramadKhoshe">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Onvan" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Year" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Income" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="Month" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GdateStart" Type="datetime" />
+          <Property Name="IntPersianMonth" Type="int" />
+        </EntityType>
+        <EntityType Name="TakhsisVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Onvan" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NameVamGirandeh" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NobatVam-Mah" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Tozihat" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Tarikh" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GTarikh" Type="datetime" />
+          <Property Name="NobatVam-Sal" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="TanzimZamanIadAvar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="saat" Type="datetime" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Hafteh" Type="int" />
+          <Property Name="rooz" Type="int" />
+          <Property Name="aks" Type="blob" />
+          <Property Name="font" Type="bit" />
+          <Property Name="Passage" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="TreeKala">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="SubHeader" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="SubSubHeader" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="Vahed" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="IekCallery" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityType Name="VAMTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="PersianDate" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="GDate" Type="datetime" />
+          <Property Name="ssum" Type="decimal" Precision="53" Scale="0" />
+          <Property Name="NumberGhest" Type="int" />
+          <Property Name="Deposite" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityContainer Name="FamilyManaerDBModelStoreContainer">
+          <EntitySet Name="ComboBoxTbl" EntityType="Self.ComboBoxTbl" store:Type="Tables" />
+          <EntitySet Name="DepositTbl" EntityType="Self.DepositTbl" store:Type="Tables" />
+          <EntitySet Name="FinancialTbl" EntityType="Self.FinancialTbl" store:Type="Tables" />
+          <EntitySet Name="GhazaBarnamehTbl" EntityType="Self.GhazaBarnamehTbl" store:Type="Tables" />
+          <EntitySet Name="GhzaNameTbl" EntityType="Self.GhzaNameTbl" store:Type="Tables" />
+          <EntitySet Name="HamsaieTbl" EntityType="Self.HamsaieTbl" store:Type="Tables" />
+          <EntitySet Name="IadAvarDaroTbl" EntityType="Self.IadAvarDaroTbl" store:Type="Tables" />
+          <EntitySet Name="IadAvarTbl" EntityType="Self.IadAvarTbl" store:Type="Tables" />
+          <EntitySet Name="MavadGhzaNameTbl" EntityType="Self.MavadGhzaNameTbl" store:Type="Tables" />
+          <EntitySet Name="MojodiKalaTbl" EntityType="Self.MojodiKalaTbl" store:Type="Tables" />
+          <EntitySet Name="OnvanDaramadTbl" EntityType="Self.OnvanDaramadTbl" store:Type="Tables" />
+          <EntitySet Name="OnvanVamNafarTbl" EntityType="Self.OnvanVamNafarTbl" store:Type="Tables" />
+          <EntitySet Name="OnvanVamTbl" EntityType="Self.OnvanVamTbl" store:Type="Tables" />
+          <EntitySet Name="PardakhtVamTbl" EntityType="Self.PardakhtVamTbl" store:Type="Tables" />
+          <EntitySet Name="SabteHazinehSakhtemanTbl" EntityType="Self.SabteHazinehSakhtemanTbl" store:Type="Tables" />
+          <EntitySet Name="TakhsisDaramadKhoshe" EntityType="Self.TakhsisDaramadKhoshe" store:Type="Tables" />
+          <EntitySet Name="TakhsisVamTbl" EntityType="Self.TakhsisVamTbl" store:Type="Tables" />
+          <EntitySet Name="TanzimZamanIadAvar" EntityType="Self.TanzimZamanIadAvar" store:Type="Tables" />
+          <EntitySet Name="TreeKala" EntityType="Self.TreeKala" store:Type="Tables" />
+          <EntitySet Name="VAMTbl" EntityType="Self.VAMTbl" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FamilyManaerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ComboBoxTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Deposit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="OnvanHazinehIaDaramadSakhteman" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NoeHazinehIaDaramadSakhteman" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="OnvanKar" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="khosheBandi" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PersinanDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialCode" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="File" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DepositTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Deposit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="ssum" Type="Int64" />
+          <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GDate" Type="DateTime" />
+          <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FinancialTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Income" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="Cost" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Datee" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="FinancialCategory" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Deposite" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Pas" Type="Boolean" />
+          <Property Name="girandeh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="EnterDate" Type="DateTime" />
+          <Property Name="Meghdar" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="Takhsis" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="IntPersianYear" Type="Int32" />
+          <Property Name="IntPersianMonth" Type="Int32" />
+        </EntityType>
+        <EntityType Name="GhazaBarnamehTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Onvan" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Nafar" Type="Int32" />
+          <Property Name="Gdate" Type="DateTime" />
+          <Property Name="KasrMavad" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Gheimat" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="PersainDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Vade" Type="String" MaxLength="2147483647" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="GhzaNameTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Nafarat" Type="Int32" />
+          <Property Name="Aks" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HamsaieTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameVahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="TedadNafarat" Type="Int32" />
+          <Property Name="Metrazh" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="StartGdate" Type="DateTime" />
+          <Property Name="startPersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="FinishGdate" Type="DateTime" />
+          <Property Name="FinishPersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Tasfieh" Type="Boolean" />
+          <Property Name="PhineNumber" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IadAvarDaroTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OnvanDaro" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Tozihat" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GDate" Type="DateTime" />
+          <Property Name="Saat" Type="DateTime" />
+          <Property Name="Dore" Type="Int32" />
+          <Property Name="Dafe" Type="Int32" />
+          <Property Name="NoeDore" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IadAvarTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TitleActivity" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PersianStartDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PersianStartTime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="StartDateTime" Type="DateTime" />
+          <Property Name="PersianEndTime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="EndDateTime" Type="DateTime" />
+          <Property Name="ReminderCategory" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PeriodNumBer" Type="Int32" />
+          <Property Name="Periodic" Type="Boolean" />
+          <Property Name="PeriodicEndTime" Type="DateTime" />
+          <Property Name="PeriodocKind" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="MeasurePeriodic" Type="Int32" />
+          <Property Name="EndDesription" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MavadGhzaNameTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameGhaza" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NameMavad" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Meghdar" Type="Int32" />
+          <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MojodiKalaTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Onvan" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Meghdar" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OnvanDaramadTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Onvan" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OnvanVamNafarTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nafar" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="VamTitle" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OnvanVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="StarGdate" Type="DateTime" />
+          <Property Name="StartPersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="FAAL" Type="Boolean" />
+          <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="MablaghVam" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="MablaghGhest" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="TedadAghsat" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PardakhtVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OnvanVam" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NameVamGirandeh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="MablaghPardakhti" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="Tozihat" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GTarikh" Type="DateTime" />
+          <Property Name="Tarikh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SabteHazinehSakhtemanTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TitleCost" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GDate" Type="DateTime" />
+          <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Cost" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="mmonth" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="ShiveTaghsim" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="IDVahed" Type="Int32" />
+          <Property Name="Year" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Income" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="VahedName" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="StartGdat" Type="DateTime" />
+          <Property Name="startPersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="FinishGdate" Type="DateTime" />
+          <Property Name="FinishPersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Enteghali" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="TakhsisDaramadKhoshe">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Onvan" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Year" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Income" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="Month" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GdateStart" Type="DateTime" />
+          <Property Name="IntPersianMonth" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TakhsisVamTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Onvan" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NameVamGirandeh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NobatVam_Mah" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Tozihat" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Tarikh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GTarikh" Type="DateTime" />
+          <Property Name="NobatVam_Sal" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TanzimZamanIadAvar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="saat" Type="DateTime" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Hafteh" Type="Int32" />
+          <Property Name="rooz" Type="Int32" />
+          <Property Name="aks" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+          <Property Name="font" Type="Boolean" />
+          <Property Name="Passage" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TreeKala">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="SubHeader" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="SubSubHeader" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="IekCallery" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VAMTbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="GDate" Type="DateTime" />
+          <Property Name="ssum" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="NumberGhest" Type="Int32" />
+          <Property Name="Deposite" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="FamilyManaerDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ComboBoxTbls" EntityType="Self.ComboBoxTbl" />
+          <EntitySet Name="DepositTbls" EntityType="Self.DepositTbl" />
+          <EntitySet Name="FinancialTbls" EntityType="Self.FinancialTbl" />
+          <EntitySet Name="GhazaBarnamehTbls" EntityType="Self.GhazaBarnamehTbl" />
+          <EntitySet Name="GhzaNameTbls" EntityType="Self.GhzaNameTbl" />
+          <EntitySet Name="HamsaieTbls" EntityType="Self.HamsaieTbl" />
+          <EntitySet Name="IadAvarDaroTbls" EntityType="Self.IadAvarDaroTbl" />
+          <EntitySet Name="IadAvarTbls" EntityType="Self.IadAvarTbl" />
+          <EntitySet Name="MavadGhzaNameTbls" EntityType="Self.MavadGhzaNameTbl" />
+          <EntitySet Name="MojodiKalaTbls" EntityType="Self.MojodiKalaTbl" />
+          <EntitySet Name="OnvanDaramadTbls" EntityType="Self.OnvanDaramadTbl" />
+          <EntitySet Name="OnvanVamNafarTbls" EntityType="Self.OnvanVamNafarTbl" />
+          <EntitySet Name="OnvanVamTbls" EntityType="Self.OnvanVamTbl" />
+          <EntitySet Name="PardakhtVamTbls" EntityType="Self.PardakhtVamTbl" />
+          <EntitySet Name="SabteHazinehSakhtemanTbls" EntityType="Self.SabteHazinehSakhtemanTbl" />
+          <EntitySet Name="TakhsisDaramadKhoshes" EntityType="Self.TakhsisDaramadKhoshe" />
+          <EntitySet Name="TakhsisVamTbls" EntityType="Self.TakhsisVamTbl" />
+          <EntitySet Name="TanzimZamanIadAvars" EntityType="Self.TanzimZamanIadAvar" />
+          <EntitySet Name="TreeKalas" EntityType="Self.TreeKala" />
+          <EntitySet Name="VAMTbls" EntityType="Self.VAMTbl" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FamilyManaerDBModelStoreContainer" CdmEntityContainer="FamilyManaerDBEntities">
+          <EntitySetMapping Name="ComboBoxTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.ComboBoxTbl">
+              <MappingFragment StoreEntitySet="ComboBoxTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+                <ScalarProperty Name="OnvanHazinehIaDaramadSakhteman" ColumnName="OnvanHazinehIaDaramadSakhteman" />
+                <ScalarProperty Name="NoeHazinehIaDaramadSakhteman" ColumnName="NoeHazinehIaDaramadSakhteman" />
+                <ScalarProperty Name="OnvanKar" ColumnName="OnvanKar" />
+                <ScalarProperty Name="khosheBandi" ColumnName="khosheBandi" />
+                <ScalarProperty Name="PersinanDate" ColumnName="PersinanDate" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SpecialCode" ColumnName="SpecialCode" />
+                <ScalarProperty Name="File" ColumnName="File" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DepositTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.DepositTbl">
+              <MappingFragment StoreEntitySet="DepositTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+                <ScalarProperty Name="ssum" ColumnName="ssum" />
+                <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+                <ScalarProperty Name="GDate" ColumnName="GDate" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FinancialTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.FinancialTbl">
+              <MappingFragment StoreEntitySet="FinancialTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+                <ScalarProperty Name="Datee" ColumnName="Datee" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FinancialCategory" ColumnName="FinancialCategory" />
+                <ScalarProperty Name="Deposite" ColumnName="Deposite" />
+                <ScalarProperty Name="Pas" ColumnName="Pas" />
+                <ScalarProperty Name="girandeh" ColumnName="girandeh" />
+                <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
+                <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+                <ScalarProperty Name="Takhsis" ColumnName="Takhsis" />
+                <ScalarProperty Name="IntPersianYear" ColumnName="IntPersianYear" />
+                <ScalarProperty Name="IntPersianMonth" ColumnName="IntPersianMonth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GhazaBarnamehTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.GhazaBarnamehTbl">
+              <MappingFragment StoreEntitySet="GhazaBarnamehTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+                <ScalarProperty Name="Nafar" ColumnName="Nafar" />
+                <ScalarProperty Name="Gdate" ColumnName="Gdate" />
+                <ScalarProperty Name="KasrMavad" ColumnName="KasrMavad" />
+                <ScalarProperty Name="Gheimat" ColumnName="Gheimat" />
+                <ScalarProperty Name="PersainDate" ColumnName="PersainDate" />
+                <ScalarProperty Name="Vade" ColumnName="Vade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GhzaNameTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.GhzaNameTbl">
+              <MappingFragment StoreEntitySet="GhzaNameTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Nafarat" ColumnName="Nafarat" />
+                <ScalarProperty Name="Aks" ColumnName="Aks" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HamsaieTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.HamsaieTbl">
+              <MappingFragment StoreEntitySet="HamsaieTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameVahed" ColumnName="NameVahed" />
+                <ScalarProperty Name="TedadNafarat" ColumnName="TedadNafarat" />
+                <ScalarProperty Name="Metrazh" ColumnName="Metrazh" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="StartGdate" ColumnName="StartGdate" />
+                <ScalarProperty Name="startPersianDate" ColumnName="startPersianDate" />
+                <ScalarProperty Name="FinishGdate" ColumnName="FinishGdate" />
+                <ScalarProperty Name="FinishPersianDate" ColumnName="FinishPersianDate" />
+                <ScalarProperty Name="Tasfieh" ColumnName="Tasfieh" />
+                <ScalarProperty Name="PhineNumber" ColumnName="PhineNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IadAvarDaroTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.IadAvarDaroTbl">
+              <MappingFragment StoreEntitySet="IadAvarDaroTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OnvanDaro" ColumnName="OnvanDaro" />
+                <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+                <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+                <ScalarProperty Name="GDate" ColumnName="GDate" />
+                <ScalarProperty Name="Saat" ColumnName="Saat" />
+                <ScalarProperty Name="Dore" ColumnName="Dore" />
+                <ScalarProperty Name="Dafe" ColumnName="Dafe" />
+                <ScalarProperty Name="NoeDore" ColumnName="NoeDore" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IadAvarTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.IadAvarTbl">
+              <MappingFragment StoreEntitySet="IadAvarTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TitleActivity" ColumnName="TitleActivity" />
+                <ScalarProperty Name="PersianStartDate" ColumnName="PersianStartDate" />
+                <ScalarProperty Name="PersianStartTime" ColumnName="PersianStartTime" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="PersianEndTime" ColumnName="PersianEndTime" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="ReminderCategory" ColumnName="ReminderCategory" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="PeriodNumBer" ColumnName="PeriodNumBer" />
+                <ScalarProperty Name="Periodic" ColumnName="Periodic" />
+                <ScalarProperty Name="PeriodicEndTime" ColumnName="PeriodicEndTime" />
+                <ScalarProperty Name="PeriodocKind" ColumnName="PeriodocKind" />
+                <ScalarProperty Name="MeasurePeriodic" ColumnName="MeasurePeriodic" />
+                <ScalarProperty Name="EndDesription" ColumnName="EndDesription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MavadGhzaNameTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.MavadGhzaNameTbl">
+              <MappingFragment StoreEntitySet="MavadGhzaNameTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameGhaza" ColumnName="NameGhaza" />
+                <ScalarProperty Name="NameMavad" ColumnName="NameMavad" />
+                <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+                <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MojodiKalaTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.MojodiKalaTbl">
+              <MappingFragment StoreEntitySet="MojodiKalaTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+                <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+                <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OnvanDaramadTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanDaramadTbl">
+              <MappingFragment StoreEntitySet="OnvanDaramadTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OnvanVamNafarTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanVamNafarTbl">
+              <MappingFragment StoreEntitySet="OnvanVamNafarTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nafar" ColumnName="Nafar" />
+                <ScalarProperty Name="VamTitle" ColumnName="VamTitle" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OnvanVamTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanVamTbl">
+              <MappingFragment StoreEntitySet="OnvanVamTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="StarGdate" ColumnName="StarGdate" />
+                <ScalarProperty Name="StartPersianDate" ColumnName="StartPersianDate" />
+                <ScalarProperty Name="FAAL" ColumnName="FAAL" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="MablaghVam" ColumnName="MablaghVam" />
+                <ScalarProperty Name="MablaghGhest" ColumnName="MablaghGhest" />
+                <ScalarProperty Name="TedadAghsat" ColumnName="TedadAghsat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PardakhtVamTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.PardakhtVamTbl">
+              <MappingFragment StoreEntitySet="PardakhtVamTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OnvanVam" ColumnName="OnvanVam" />
+                <ScalarProperty Name="NameVamGirandeh" ColumnName="NameVamGirandeh" />
+                <ScalarProperty Name="MablaghPardakhti" ColumnName="MablaghPardakhti" />
+                <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+                <ScalarProperty Name="GTarikh" ColumnName="GTarikh" />
+                <ScalarProperty Name="Tarikh" ColumnName="Tarikh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SabteHazinehSakhtemanTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.SabteHazinehSakhtemanTbl">
+              <MappingFragment StoreEntitySet="SabteHazinehSakhtemanTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TitleCost" ColumnName="TitleCost" />
+                <ScalarProperty Name="GDate" ColumnName="GDate" />
+                <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="mmonth" ColumnName="mmonth" />
+                <ScalarProperty Name="ShiveTaghsim" ColumnName="ShiveTaghsim" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IDVahed" ColumnName="IDVahed" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="VahedName" ColumnName="VahedName" />
+                <ScalarProperty Name="StartGdat" ColumnName="StartGdat" />
+                <ScalarProperty Name="startPersianDate" ColumnName="startPersianDate" />
+                <ScalarProperty Name="FinishGdate" ColumnName="FinishGdate" />
+                <ScalarProperty Name="FinishPersianDate" ColumnName="FinishPersianDate" />
+                <ScalarProperty Name="Enteghali" ColumnName="Enteghali" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TakhsisDaramadKhoshes">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.TakhsisDaramadKhoshe">
+              <MappingFragment StoreEntitySet="TakhsisDaramadKhoshe">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="GdateStart" ColumnName="GdateStart" />
+                <ScalarProperty Name="IntPersianMonth" ColumnName="IntPersianMonth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TakhsisVamTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.TakhsisVamTbl">
+              <MappingFragment StoreEntitySet="TakhsisVamTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+                <ScalarProperty Name="NameVamGirandeh" ColumnName="NameVamGirandeh" />
+                <ScalarProperty Name="NobatVam_Mah" ColumnName="NobatVam-Mah" />
+                <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+                <ScalarProperty Name="Tarikh" ColumnName="Tarikh" />
+                <ScalarProperty Name="GTarikh" ColumnName="GTarikh" />
+                <ScalarProperty Name="NobatVam_Sal" ColumnName="NobatVam-Sal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TanzimZamanIadAvars">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.TanzimZamanIadAvar">
+              <MappingFragment StoreEntitySet="TanzimZamanIadAvar">
+                <ScalarProperty Name="saat" ColumnName="saat" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Hafteh" ColumnName="Hafteh" />
+                <ScalarProperty Name="rooz" ColumnName="rooz" />
+                <ScalarProperty Name="aks" ColumnName="aks" />
+                <ScalarProperty Name="font" ColumnName="font" />
+                <ScalarProperty Name="Passage" ColumnName="Passage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TreeKalas">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.TreeKala">
+              <MappingFragment StoreEntitySet="TreeKala">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="SubHeader" ColumnName="SubHeader" />
+                <ScalarProperty Name="SubSubHeader" ColumnName="SubSubHeader" />
+                <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+                <ScalarProperty Name="IekCallery" ColumnName="IekCallery" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VAMTbls">
+            <EntityTypeMapping TypeName="FamilyManaerDBModel.VAMTbl">
+              <MappingFragment StoreEntitySet="VAMTbl">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+                <ScalarProperty Name="GDate" ColumnName="GDate" />
+                <ScalarProperty Name="ssum" ColumnName="ssum" />
+                <ScalarProperty Name="NumberGhest" ColumnName="NumberGhest" />
+                <ScalarProperty Name="Deposite" ColumnName="Deposite" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

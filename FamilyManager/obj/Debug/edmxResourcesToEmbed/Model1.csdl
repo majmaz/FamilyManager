@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FamilyManaerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ComboBoxTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Deposit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DepositTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Deposit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="ssum" Type="Int64" />
+    <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="GDate" Type="DateTime" />
+    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FinancialTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Income" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="Cost" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Datee" Type="DateTime" />
+    <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="FinancialCategory" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Deposite" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Pas" Type="Boolean" />
+    <Property Name="girandeh" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="EnterDate" Type="DateTime" />
+    <Property Name="Meghdar" Type="Decimal" Precision="53" Scale="0" />
+  </EntityType>
+  <EntityType Name="GhzaNameTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Nafarat" Type="Int32" />
+    <Property Name="Aks" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HamsaieTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameVahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="TedadNafarat" Type="Int32" />
+    <Property Name="Metrazh" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IadAvarTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TitleActivity" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="PersianStartDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="PersianStartTime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="StartDateTime" Type="DateTime" />
+    <Property Name="PersianEndTime" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="EndDateTime" Type="DateTime" />
+    <Property Name="ReminderCategory" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="PeriodNumBer" Type="Int32" />
+    <Property Name="Periodic" Type="Boolean" />
+    <Property Name="PeriodicEndTime" Type="DateTime" />
+    <Property Name="PeriodocKind" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MeasurePeriodic" Type="Int32" />
+    <Property Name="EndDesription" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MavadGhzaNameTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameGhaza" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="NameMavad" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Meghdar" Type="Int32" />
+    <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SabteHazinehSakhtemanTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TitleCost" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="GDate" Type="DateTime" />
+    <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="mmonth" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="ShiveTaghsim" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Tanzimat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ZamanIadAvar" Type="DateTime" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TreeKala">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="SubHeader" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="SubSubHeader" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Vahed" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Callery" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VAMTbl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="ssum" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="NumberGhest" Type="Int32" />
+    <Property Name="PersianDate" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="GDate" Type="DateTime" />
+    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FamilyManaerDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ComboBoxTbls" EntityType="Self.ComboBoxTbl" />
+    <EntitySet Name="DepositTbls" EntityType="Self.DepositTbl" />
+    <EntitySet Name="FinancialTbls" EntityType="Self.FinancialTbl" />
+    <EntitySet Name="GhzaNameTbls" EntityType="Self.GhzaNameTbl" />
+    <EntitySet Name="HamsaieTbls" EntityType="Self.HamsaieTbl" />
+    <EntitySet Name="IadAvarTbls" EntityType="Self.IadAvarTbl" />
+    <EntitySet Name="MavadGhzaNameTbls" EntityType="Self.MavadGhzaNameTbl" />
+    <EntitySet Name="SabteHazinehSakhtemanTbls" EntityType="Self.SabteHazinehSakhtemanTbl" />
+    <EntitySet Name="Tanzimats" EntityType="Self.Tanzimat" />
+    <EntitySet Name="TreeKalas" EntityType="Self.TreeKala" />
+    <EntitySet Name="VAMTbls" EntityType="Self.VAMTbl" />
+  </EntityContainer>
+</Schema>
