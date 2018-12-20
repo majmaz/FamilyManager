@@ -1549,7 +1549,7 @@ namespace FamilyManager
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            System.Windows.MessageBox.Show("");
             Toolbarinvisible();
             EmptyPar(); Panelinvisible(); CleanOldDataEnteredTXT();
 
