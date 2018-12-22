@@ -1,0 +1,23 @@
+﻿<Application x:Class="FamilyManager.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FamilyManager"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="dic\DictionaryLeftToolbarBut.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryLable.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTextBox.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryToggle.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTextBoxTemplate.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryColonPunctuation.xaml"/>
+                <ResourceDictionary Source="dic\DictionaryTimePicker.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</Application>

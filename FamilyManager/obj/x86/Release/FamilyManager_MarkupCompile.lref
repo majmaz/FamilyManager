@@ -1,13 +1,11 @@
-﻿
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\App.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DesignTimeResources.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\Dictionary1.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryColonPunctuation.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryLable.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryLeftToolbarBut.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryTextBox.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryTextBoxTemplate.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryTimePicker.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\DictionaryToggle.xaml;;
-FC:\Users\SKY\documents\visual studio 2017\Projects\FamilyManager\FamilyManager\MainWindow.xaml;;
+﻿E:\Majid Project\FamilyManager\FamilyManager\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+FE:\Majid Project\FamilyManager\FamilyManager\App.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryColonPunctuation.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryLable.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryLeftToolbarBut.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryTextBox.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryTextBoxTemplate.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryTimePicker.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\Dic\DictionaryToggle.xaml;;
+FE:\Majid Project\FamilyManager\FamilyManager\MainWindow.xaml;;
 

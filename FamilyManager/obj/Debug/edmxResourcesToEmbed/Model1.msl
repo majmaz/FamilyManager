@@ -6,6 +6,15 @@
         <MappingFragment StoreEntitySet="ComboBoxTbl">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+          <ScalarProperty Name="OnvanHazinehIaDaramadSakhteman" ColumnName="OnvanHazinehIaDaramadSakhteman" />
+          <ScalarProperty Name="NoeHazinehIaDaramadSakhteman" ColumnName="NoeHazinehIaDaramadSakhteman" />
+          <ScalarProperty Name="OnvanKar" ColumnName="OnvanKar" />
+          <ScalarProperty Name="khosheBandi" ColumnName="khosheBandi" />
+          <ScalarProperty Name="PersinanDate" ColumnName="PersinanDate" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SpecialCode" ColumnName="SpecialCode" />
+          <ScalarProperty Name="File" ColumnName="File" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -37,6 +46,23 @@
           <ScalarProperty Name="girandeh" ColumnName="girandeh" />
           <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
           <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+          <ScalarProperty Name="Takhsis" ColumnName="Takhsis" />
+          <ScalarProperty Name="IntPersianYear" ColumnName="IntPersianYear" />
+          <ScalarProperty Name="IntPersianMonth" ColumnName="IntPersianMonth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GhazaBarnamehTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.GhazaBarnamehTbl">
+        <MappingFragment StoreEntitySet="GhazaBarnamehTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+          <ScalarProperty Name="Nafar" ColumnName="Nafar" />
+          <ScalarProperty Name="Gdate" ColumnName="Gdate" />
+          <ScalarProperty Name="KasrMavad" ColumnName="KasrMavad" />
+          <ScalarProperty Name="Gheimat" ColumnName="Gheimat" />
+          <ScalarProperty Name="PersainDate" ColumnName="PersainDate" />
+          <ScalarProperty Name="Vade" ColumnName="Vade" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -59,6 +85,27 @@
           <ScalarProperty Name="TedadNafarat" ColumnName="TedadNafarat" />
           <ScalarProperty Name="Metrazh" ColumnName="Metrazh" />
           <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StartGdate" ColumnName="StartGdate" />
+          <ScalarProperty Name="startPersianDate" ColumnName="startPersianDate" />
+          <ScalarProperty Name="FinishGdate" ColumnName="FinishGdate" />
+          <ScalarProperty Name="FinishPersianDate" ColumnName="FinishPersianDate" />
+          <ScalarProperty Name="Tasfieh" ColumnName="Tasfieh" />
+          <ScalarProperty Name="PhineNumber" ColumnName="PhineNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IadAvarDaroTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.IadAvarDaroTbl">
+        <MappingFragment StoreEntitySet="IadAvarDaroTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OnvanDaro" ColumnName="OnvanDaro" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+          <ScalarProperty Name="GDate" ColumnName="GDate" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Dore" ColumnName="Dore" />
+          <ScalarProperty Name="Dafe" ColumnName="Dafe" />
+          <ScalarProperty Name="NoeDore" ColumnName="NoeDore" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -94,10 +141,65 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="MojodiKalaTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.MojodiKalaTbl">
+        <MappingFragment StoreEntitySet="MojodiKalaTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+          <ScalarProperty Name="Meghdar" ColumnName="Meghdar" />
+          <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnvanDaramadTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanDaramadTbl">
+        <MappingFragment StoreEntitySet="OnvanDaramadTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnvanVamNafarTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanVamNafarTbl">
+        <MappingFragment StoreEntitySet="OnvanVamNafarTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nafar" ColumnName="Nafar" />
+          <ScalarProperty Name="VamTitle" ColumnName="VamTitle" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnvanVamTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.OnvanVamTbl">
+        <MappingFragment StoreEntitySet="OnvanVamTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StarGdate" ColumnName="StarGdate" />
+          <ScalarProperty Name="StartPersianDate" ColumnName="StartPersianDate" />
+          <ScalarProperty Name="FAAL" ColumnName="FAAL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MablaghVam" ColumnName="MablaghVam" />
+          <ScalarProperty Name="MablaghGhest" ColumnName="MablaghGhest" />
+          <ScalarProperty Name="TedadAghsat" ColumnName="TedadAghsat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PardakhtVamTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.PardakhtVamTbl">
+        <MappingFragment StoreEntitySet="PardakhtVamTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OnvanVam" ColumnName="OnvanVam" />
+          <ScalarProperty Name="NameVamGirandeh" ColumnName="NameVamGirandeh" />
+          <ScalarProperty Name="MablaghPardakhti" ColumnName="MablaghPardakhti" />
+          <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+          <ScalarProperty Name="GTarikh" ColumnName="GTarikh" />
+          <ScalarProperty Name="Tarikh" ColumnName="Tarikh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="SabteHazinehSakhtemanTbls">
       <EntityTypeMapping TypeName="FamilyManaerDBModel.SabteHazinehSakhtemanTbl">
         <MappingFragment StoreEntitySet="SabteHazinehSakhtemanTbl">
-          <ScalarProperty Name="Year" ColumnName="Year" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TitleCost" ColumnName="TitleCost" />
           <ScalarProperty Name="GDate" ColumnName="GDate" />
@@ -106,15 +208,56 @@
           <ScalarProperty Name="mmonth" ColumnName="mmonth" />
           <ScalarProperty Name="ShiveTaghsim" ColumnName="ShiveTaghsim" />
           <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Vahed" ColumnName="Vahed" />
+          <ScalarProperty Name="IDVahed" ColumnName="IDVahed" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="VahedName" ColumnName="VahedName" />
+          <ScalarProperty Name="StartGdat" ColumnName="StartGdat" />
+          <ScalarProperty Name="startPersianDate" ColumnName="startPersianDate" />
+          <ScalarProperty Name="FinishGdate" ColumnName="FinishGdate" />
+          <ScalarProperty Name="FinishPersianDate" ColumnName="FinishPersianDate" />
+          <ScalarProperty Name="Enteghali" ColumnName="Enteghali" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Tanzimats">
-      <EntityTypeMapping TypeName="FamilyManaerDBModel.Tanzimat">
-        <MappingFragment StoreEntitySet="Tanzimat">
-          <ScalarProperty Name="ZamanIadAvar" ColumnName="ZamanIadAvar" />
+    <EntitySetMapping Name="TakhsisDaramadKhoshes">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.TakhsisDaramadKhoshe">
+        <MappingFragment StoreEntitySet="TakhsisDaramadKhoshe">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="GdateStart" ColumnName="GdateStart" />
+          <ScalarProperty Name="IntPersianMonth" ColumnName="IntPersianMonth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TakhsisVamTbls">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.TakhsisVamTbl">
+        <MappingFragment StoreEntitySet="TakhsisVamTbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Onvan" ColumnName="Onvan" />
+          <ScalarProperty Name="NameVamGirandeh" ColumnName="NameVamGirandeh" />
+          <ScalarProperty Name="NobatVam_Mah" ColumnName="NobatVam-Mah" />
+          <ScalarProperty Name="Tozihat" ColumnName="Tozihat" />
+          <ScalarProperty Name="Tarikh" ColumnName="Tarikh" />
+          <ScalarProperty Name="GTarikh" ColumnName="GTarikh" />
+          <ScalarProperty Name="NobatVam_Sal" ColumnName="NobatVam-Sal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TanzimZamanIadAvars">
+      <EntityTypeMapping TypeName="FamilyManaerDBModel.TanzimZamanIadAvar">
+        <MappingFragment StoreEntitySet="TanzimZamanIadAvar">
+          <ScalarProperty Name="saat" ColumnName="saat" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Hafteh" ColumnName="Hafteh" />
+          <ScalarProperty Name="rooz" ColumnName="rooz" />
+          <ScalarProperty Name="aks" ColumnName="aks" />
+          <ScalarProperty Name="font" ColumnName="font" />
+          <ScalarProperty Name="Passage" ColumnName="Passage" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -126,7 +269,7 @@
           <ScalarProperty Name="SubHeader" ColumnName="SubHeader" />
           <ScalarProperty Name="SubSubHeader" ColumnName="SubSubHeader" />
           <ScalarProperty Name="Vahed" ColumnName="Vahed" />
-          <ScalarProperty Name="Callery" ColumnName="Callery" />
+          <ScalarProperty Name="IekCallery" ColumnName="IekCallery" />
           <ScalarProperty Name="description" ColumnName="description" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -136,10 +279,11 @@
         <MappingFragment StoreEntitySet="VAMTbl">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="ssum" ColumnName="ssum" />
-          <ScalarProperty Name="NumberGhest" ColumnName="NumberGhest" />
           <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
           <ScalarProperty Name="GDate" ColumnName="GDate" />
+          <ScalarProperty Name="ssum" ColumnName="ssum" />
+          <ScalarProperty Name="NumberGhest" ColumnName="NumberGhest" />
+          <ScalarProperty Name="Deposite" ColumnName="Deposite" />
           <ScalarProperty Name="description" ColumnName="description" />
         </MappingFragment>
       </EntityTypeMapping>
